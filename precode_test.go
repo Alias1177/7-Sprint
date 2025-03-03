@@ -9,7 +9,7 @@ import (
 	"testing"
 )
 
-// решил вынести тесты в отдельный файл
+// решил вынести тесты
 func TestMainHandlerValidRequest(t *testing.T) {
 	req, err := http.NewRequest("GET", "/cafe?city=moscow&count=2", nil)
 	require.NoError(t, err)
